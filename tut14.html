@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background </title>
+    <style>
+        #firstpara{
+            background-color: gold ;
+            height: 200px;
+            width: 200px;
+            /* border: 2px;
+            border-style: solid;
+            border-color: blue; */
+            border-radius: 18px;
+            border: 2px solid blue;
+        }
+        #secondpara{
+            height: 200px;
+            width: 200px;
+            border: solid;
+            background-color: gray;
+            border-top-left-radius: 21px;
+            border-bottom-left-radius: 29px;
+            border-bottom-right-radius: 12px ;
+            border-top-right-radius: 10px ;
+        }
+        #thirdpara{
+            height: 700px;
+            width: 990px;
+            background-image: url('/images/logo.png');
+            background-repeat: no-repeat;
+            background-position: center left;
+
+        }
+        #fourthpara{
+            height: 200px;
+            width: 200px;
+            border: 10px solid;
+            border-top-color: aqua;
+            border-bottom-color: pink;
+            border-left-color: yellow;
+            border-right-color: blueviolet;
+            background-image: url('/images/img3.jpg');
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h2>This is a heading</h2>
+    <p id="firstpara">This is a paragraph</p>
+    
+    <h2>This is a heading</h2>
+    <p id="secondpara">This is a paragraph</p>
+   
+    <h2>This is a heading</h2>
+    <p id="thirdpara">This is a paragraph</p>
+    
+    <h2>This is a heading</h2>
+    <p id="fourthpara">This is a paragraph</p>
+</body>
+</html>
