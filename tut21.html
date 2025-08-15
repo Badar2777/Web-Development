@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .post{
+           border: 2px solid yellow;
+           height: 5000px;
+        }
+        .square{
+            border: 2px solid aqua;
+            display: inline-block;
+            height: 200px ;
+            width: 200px;
+            /* position:  absolute relative sticky fixed  */
+        }
+        #square3{
+            /* position: relative;
+            postion: relative It is relatevive to its orignal position
+            /* left: 34px; */
+            /* top: 32px;
+            right: 50px; */
+            /* position: absolute;
+            position: it is relative to its parents position
+            top:30px;
+            left: 50px; */
+        }
+        #square4{
+            position: fixed;
+            float: right;
+            bottom: 2px;
+            right: 12px;
+        }
+    </style>
+</head>
+<body>
+      <div class="post">
+        <div class="square" id="square1">1</div>
+        <div class="square" id="square2">2</div>
+        <div class="square" id="square3">3</div>
+        <div class="square" id="square4">4</div>
+    </div>
+</body>
+</html>
