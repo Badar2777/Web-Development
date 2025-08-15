@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            height: 2000px;
+        }
+
+        header {
+            border: 2px solid red;
+        }
+
+        img {
+            height: 129px;
+            width: 147px;
+            margin: auto;
+            display: block;
+        }
+
+        h1 {
+            margin: 0;
+            text-align: center;
+
+        }
+
+        .container {}
+
+        .box {
+            border: 2px solid gray;
+            margin: 25px;
+            height: 300px;
+            width: 410px;
+            display: inline-block;
+            text-align: justify;
+        }
+        .post{
+           border: 2px solid yellow;
+        }
+        .square{
+            border: 2px solid aqua;
+            display: inline-block;
+            height: 200px ;
+            width: 200px;
+            /* position:  absolute relative sticky fixed  */
+        }
+        #square3{
+            /* position: relative;
+            postion: relative It is relatevive to its orignal position
+            /* left: 34px; */
+            /* top: 32px;
+            right: 50px; */
+            /* position: absolute;
+            position: it is relative to its parents position
+            top:30px;
+            left: 50px; */
+
+            position: fixed;
+            top: ;
+            float: right;
+
+        }
+        </style>
+</head>
+
+<body>
+    <div class="post">
+        <div class="square" id="square1">1</div>
+        <div class="square" id="square2">2</div>
+        <div class="square" id="square3">3</div>
+        <div class="square" id="square4">4</div>
+    </div>
+    <br>
+    <header>
+        <img src="Linen.jpg" alt="">
+        <h1>Welcome to our website</h1>
+    </header>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod facilis aut, animi ex blanditiis
+                maiores cumque? A ipsum mollitia, nulla exercitationem dolores veritatis at quis, itaque qui, inventore
+                cupiditate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid excepturi hic odit
+                aspernatur unde consequatur delectus provident animi eum blanditiis laudantium eius omnis, voluptas
+                veniam perspiciatis iure ipsum error vitae dolorum minus modi libero!</p>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod facilis aut, animi ex blanditiis
+                maiores cumque? A ipsum mollitia, nulla exercitationem dolores veritatis at quis, itaque qui, inventore
+                cupiditate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid excepturi hic odit
+                aspernatur unde consequatur delectus provident animi eum blanditiis laudantium eius omnis, voluptas
+                veniam perspiciatis iure ipsum error vitae dolorum minus modi libero!</p>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quod facilis aut, animi ex blanditiis
+                maiores cumque? A ipsum mollitia, nulla exercitationem dolores veritatis at quis, itaque qui, inventore
+                cupiditate? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid excepturi hic odit
+                aspernatur unde consequatur delectus provident animi eum blanditiis laudantium eius omnis, voluptas
+                veniam perspiciatis iure ipsum error vitae dolorum minus modi libero!</p>
+        </div>
+    </div>
+</body>
+
+</html>
