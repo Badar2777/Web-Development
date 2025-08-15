@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear and Float</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            border: 2px solid grey;
+            width: 730px;
+            margin: auto;
+            background-color: aqua;
+        }
+        .items{
+            background-color: rgb(236, 213, 156);
+            border: 2px solid blue;
+            margin: 12px;
+        }
+        #fruit{
+            width: 46%;
+            float: left;
+            /* padding: 12px; */
+        }
+        #milk{
+            width: 46%;
+            float: right;
+        }
+        #computer{
+            clear: both;
+        }
+        P{
+            text-align: center;
+            text-align: left;
+            text-align: right ;
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to our store</h1>
+        <div class="items" id="fruit">
+            <h3>Fruits</h3>
+            <p id="fruuitpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque autem asperiores, cum neque molestiae. Laborum architecto voluptate repudiandae hic reprehenderit quaerat, dolor ad corrupti? Velit dolorum eos quod facere.</p>
+        </div>
+        <div class="items" id="milk">
+            <h3>Milk</h3>
+            <p id="milkpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque autem asperiores, cum neque molestiae. Laborum architecto voluptate repudiandae hic reprehenderit quaerat, dolor ad corrupti? Velit dolorum eos quod facere.</p>
+        </div>
+        <div class="items" id="computer">
+            <h3>Computer</h3>
+            <p id="computerpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum cumque autem asperiores, cum neque molestiae. Laborum architecto voluptate repudiandae hic reprehenderit quaerat, dolor ad corrupti? Velit dolorum eos quod facere.</p>
+        </div>
+    </div>
+</body>
+</html>
