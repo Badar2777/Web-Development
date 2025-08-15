@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow/ text Shadow</title>
+    <style>
+        :root{
+
+            --backcolor: burlywood;
+            --maxh: 300px;
+            --maxwidth: 400px;
+        }
+        .container{
+            display: flex;
+        }
+        .box{
+            /* height: var(--maxh); */
+            /* border: 2px solid black; */
+            margin: 2px 10px;
+            padding: 12px;
+            /* background-color: burlywood; */
+            /* box-shadow: 10px 13px green; */
+            /* box-shadow: -10px -13px green; */
+            /* box-shadow: 10px 13px 10px green; */
+            /* box-shadow: 10px 13px 10px 12px green; */
+            box-shadow:inset 10px 13px  green;
+        }
+        h1{
+            text-shadow: 12px 10px white;
+        }
+        #box-1{
+            height: var(--maxh);
+            background-color: var(--backcolor);
+        }
+        #box-2{
+            background-color: var(--backcolor);
+        }
+        #box-4{
+            height: var(--maxh);
+            background-color: var(--backcolor);
+            width: var(--maxwidth);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">
+            <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error officia delectus animi asperiores sit, cumque ipsum, aliquam veniam, totam placeat? Corrupti, tempora placeat tenetur nihil et ipsum at saepe?</p>
+        </div>
+        <div class="box" id="box-2">
+            <h1>CSS</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error officia delectus animi asperiores sit, cumque ipsum, aliquam veniam, totam placeat? Corrupti, tempora placeat tenetur nihil et ipsum at saepe?</p>
+        </div>
+        <div class="box" id="box-3">
+            <h1>JavaScript</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate error officia delectus animi asperiores sit, cumque ipsum, aliquam veniam, totam placeat? Corrupti, tempora placeat tenetur nihil et ipsum at saepe?</p>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box" id="box-4">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam autem quod blanditiis! Porro illum cumque mollitia enim nam exercitationem libero doloribus ad aut nesciunt neque perferendis officia id, autem maiores!</p>
+        </div>
+    </div>
+</body>
+</html>
