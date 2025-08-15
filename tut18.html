@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selector </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body::before {
+            content: "";
+            background: url(Linen.jpg) center/cover no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+
+            /* background-position: center; */
+        }
+
+        .container {
+            border: 2px solid grey;
+            width: 666px;
+            margin: 0px auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: blue;
+        }
+
+        a:visited {
+            background-color: yellow;
+            color: brown;
+        }
+
+        a:active {
+            background-color: black;
+        }
+
+        .btn {
+            padding: 12px;
+            cursor: pointer;
+            background-color: aqua;
+            border: none;
+            color: orange;
+            margin: 20px;
+        }
+
+        .btn:hover {
+            background-color: blue;
+            color: red;
+            border: 2px solid black;
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>This is our website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, aperiam veniam. Voluptate doloribus nisi
+            laboriosam voluptatum doloremque obcaecati dolores nemo qui quas, cumque pariatur culpa nihil debitis
+            aliquam quae suscipit.</p>
+        <a href="https://facebook.com" class="btn" target="_blank">read more</a>
+        <button class="btn">Click here</button>
+    </div>
+</body>
+
+</html>
