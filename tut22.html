@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+    .container{
+        height: 700px;
+        width: 100%;
+        border: 2px solid black;
+      
+        /* display: flex; */
+        /* flex properties for container */
+        /* The default direction of flex-direction is row  */
+        /* flex-direction: row; */
+        /* flex-direction: column;*/
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: nowrap; */
+       /* flex-wrap: wrap; */
+       /* flex-wrap: wrap-reverse; */
+
+       /* flex-flow: row wrap; */
+
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+       /*  justify-content: space-around; */
+
+        /* align-items: center; */
+        /* align-items: flex-end; */
+         /* align-items: flex-start; */
+       /* align-items: last baseline; */
+
+    }
+    .items{
+        /* border: 2px solid green; */
+        height: 170px; 
+        width: 170px;
+        /* Default visibility is visible */
+        /* visibility: hidden; */
+        /* margin: 2px; */
+        position: relative;
+        /* display: inline-block; */
+    }
+    #item1{
+        /* order: 2; */
+        /* flex-grow: 3; */
+        /* flex-shrink: 2; */
+        background-color: red;
+        top: 34px;
+        z-index: 56;
+    }
+    #item2{
+        /* order:1; */
+        background-color: black;
+        /* visibility: hidden;
+        display: none; */
+        /* flex-basis: 250px; */
+        /* top: 36; */
+    }
+    #item3{
+        /* order: 33; */
+        /* align-self: center;
+        align-self: flex-end; */
+        background-color: aqua;
+        /* position: sticky;
+        top: 0px;
+        float: right;
+        right: 2px; */
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="items" id="item1">First item</div>
+        <div class="items" id="item2">Second item</div>
+        <div class="items" id="item3">Third item</div>
+        <!-- <div class="items" id="item4">Fourth item</div>
+        <div class="items" id="item5">Fifth item</div>
+        <div class="items" id="item6">Sixth item</div> -->
+    </div>
+</body>
+</html>
