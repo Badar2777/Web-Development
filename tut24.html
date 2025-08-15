@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            background: red;
+        }
+        h1{
+            text-align: center;
+            font-size: 3em;
+            display: none;
+        }
+        @media screen and (max-width: 400px) {
+            #first1{
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media screen and (min-width: 401px) and (max-width:800px){
+            #first2{
+                display: block;
+                background-color: aqua;
+            }
+        }
+        @media screen and (min-width: 801px) and (max-width:1200px){
+            #first3{
+                display: block;
+                background-color: aqua;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first1">This is first heading</h1>
+        <h1 id="first2">This is second heading</h1>
+        <h1 id="first3">This is third heading</h1>
+    </div>
+
+</body>
+</html>
