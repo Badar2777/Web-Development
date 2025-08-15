@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth child</title>
+    <style>
+        body::before{
+            content: "";
+            background: url('/images/bg1.jpg') center/cover no-repeat;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.8;
+        }
+        .container{
+            /* display: flex; */
+            align-items: center;
+            justify-content: center;
+            border: 2px solid red;
+            /* position: absolute; */
+            background-color: blue;
+            opacity: 0.5;
+            z-index: 1;
+            
+        }
+        input{
+            display: block;
+            margin: 12px auto;
+        }
+        input[type='text']{
+            width: 300px;
+            border: 2px solid gray;
+        }
+        a[target='_blank']{
+            color: darkgray;
+        }
+        /* li:nth-child(even){
+            color: pink;
+        }
+        li:nth-child(odd){
+            color: yellow;
+        } */
+        li:nth-child(5n){
+            color: yellow;
+        }
+        img{
+            height: 100px;
+            width: 100px;
+            /* filter: invert(100);*/
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="/images/logo.png" alt="">
+    </nav>
+    <div class="container">
+        <form action="">
+            <input type="text" placeholder="Enter your name">
+            <input type="email">
+            <input type="password">
+            <input type="submit" value="submit">
+        </form>
+         <a href="http://google.com" target="_blank">Go to google</a>
+         <a href="http://google.com" target="_self">Go to facebook</a>
+
+         <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+         </ul>
+    </div>
+</body>
+</html>
