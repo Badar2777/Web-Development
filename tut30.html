@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on string methods</title>
+</head>
+<body>
+    <h1>Welcome to our website</h1>
+    <i class="fa-slab fa-regular fa-comment"></i>
+    <i class="fa-slab fa-regular fa-volume"></i>
+    <i class="fa-slab fa-regular fa-envelope"></i>
+    <script>
+        console.log("Hello");
+
+        var str = "This is a string";
+        console.log(str);
+
+        var position = str.indexOf('is');
+        console.log(position);
+
+        var post = str.lastIndexOf("is");
+        console.log(post);
+
+        //slicing
+        var substr1 = str.substr(2,6);
+        console.log(substr1);
+
+        var substr2 = str.substring(6,9);
+        console.log(substr2);
+
+        var substr3 = str.substring(9,12);
+        console.log(substr3);
+
+        //Changing
+        var replaced = str.replace("string", "line");
+        console.log(str);
+        console.log(replaced);
+        console.log(str);
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        //Trim function
+        var strWithWhhitespaces = "                                                       This contains                                                   whitespaces                                       ";
+        console.log(strWithWhhitespaces);
+        console.log(strWithWhhitespaces.trim());
+
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/fa45aa9271.js" crossorigin="anonymous"></script>
+</body>
+</html>
