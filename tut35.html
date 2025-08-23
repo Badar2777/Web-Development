@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <style>
+        .dark-mode{
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Dom Manipulation</h1>
+    <h2>Document Object Module</h2>
+    <h3>Html is known as Dom in javascript</h3> -->
+ 
+        <!-- onclick
+        mouseover/mouseout
+        mousein / mouseout -->
+
+
+    <div class="container">
+        <button id="btn" onclick="toggleTheme()">Change Background</button>
+        <h1 id="heading">Welcome to our website</h1>
+        <button id="btn" onclick="changeText()">Change text</button>
+        <p id="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam placeat ipsa architecto pariatur, nostrum hic enim error atque quas dolorem ad illum sint explicabo natus a quis officiis iste necessitatibus.</p>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    </div>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button id="btn" onclick="showText()">Submit</button>
+    <script>
+        // console.log("This is our 35th tutorial")
+
+        function changeText() {
+            let heading = document.getElementById("heading");
+            let btn = document.getElementById('btn');
+            heading.textContent = "Heading Changed"
+        }
+
+        function toggleTheme() {
+         let btn = document.getElementById("btn"); 
+            let body = document.body;
+            body.classList.toggle("dark-mode");
+            if(body.style.background !='black'){
+                body.style.background = 'black'
+            }
+            else
+            {
+                body.style.background = 'white'
+            }
+            }
+        
+        function toggleHide() {
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            if (para.style.display !='none') {
+                para.style.display = 'none'
+            } else {
+                para.style.display = 'block'
+            }
+        }
+
+        function showText() {
+            let input = document.getElementById('name');
+            let btn = document.getElementById('btn');
+            alert("Hello ,"+ input.value)
+        }
+    </script>
+</body>
+</html>
