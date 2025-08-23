@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sets</title>
+</head>
+<body>
+    
+    <h2 id="clock"></h2>
+    <button id="id" onclick="startClock()">Start</button>
+
+    <script>
+        console.log("Hello World")
+
+        setTimeout(() => {
+            console.log("Hello after 5 seconds")
+        }, 5000);
+
+        console.log("End")
+
+        // let count = 0;
+        // setInterval(() => {
+        //     count++;
+        //     console.log("Count: "+count)
+        // }, 1000);
+
+        let i = 0;
+       let timer = setInterval(() => {
+            i++;
+            console.log("Count :"+i);
+
+            if (i===5) {
+            clearInterval(timer);
+            console.log("Stopped")             
+        }
+        }, 1000);
+        
+        // = assignment operator
+        // ==  equal or not
+        // === equal and datatype
+        // var a = 23;
+        // console.log(a)
+        // var a = 25
+        // console.log(a)
+
+        // let b = 34
+        // console.log(b)
+        // {
+        //     let b = 43
+        //     console.log(b)
+        // }
+        // console.log(b)
+
+       function startClock() {
+        let btn = document.getElementById('btn');
+
+        setInterval(() => {
+            let now = new Date()
+            document.getElementById('clock').textContent = now.toLocaleTimeString()
+        }, 1000);
+       }
+
+
+       let d = '13';
+       if(d === '13'){
+        console.log(d)
+       }
+    </script>
+</body>
+</html>
