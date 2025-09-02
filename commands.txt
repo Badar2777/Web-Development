@@ -1,0 +1,17 @@
+For starting server
+1. node filename
+or
+2. nodemon filename
+
+For installing something
+1. npm install package name
+or
+2. npm i package name
+
+For intinalizing package.json
+npm init 
+
+Other comands 
+cd (to get into directory)
+cd.. (to get out from directory)
+ls (to view all the files in the directory)
