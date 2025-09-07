@@ -1,0 +1,21 @@
+install express and mongoose
+npm i express mongoose
+
+import all packages 
+
+define express app
+
+add middleware
+
+connect with mongoose using localhost:port/name of database
+use promises
+
+use schema and define datatypes
+save it into a constant
+
+use get request and add the desired file
+
+use post request and make asynchronous call 
+then use try and catch functions  
+
+listen the app 
