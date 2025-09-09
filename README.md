@@ -1,4 +1,4 @@
-# Web-Development Lectures – Badar Bhai
+# Web-Development Lectures – Badar
 
 This repository houses my collection of web development lecture files—sessions that walk through HTML, CSS, and JavaScript fundamentals.
 
